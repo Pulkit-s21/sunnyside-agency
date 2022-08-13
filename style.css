@@ -574,4 +574,9 @@ footer div ul li a:hover{
   .nav-list a{
     color: var(--clr-neutral-100);
   }
+
+  .socials ul{
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+  }
 }
