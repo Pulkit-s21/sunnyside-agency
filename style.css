@@ -348,7 +348,7 @@ p{
   background-image: url(/images/desktop/image-header.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -529,7 +529,7 @@ footer div ul li a:hover{
 .nav-list a:before{
   content: '';
   position: absolute;
-  height: 5px;
+  height: 3px;
   width: 100%;
   background-color: var(--clr-primary-200);
   left: 0;
@@ -554,11 +554,13 @@ footer div ul li a:hover{
     transform: scale(0,1);
     transition: transform 150ms linear;
   }
+
   .nav-list a:hover::before{
     transform: scale(1,1);
   }
 }
 
+/* Mobile version navBar media query */
 @media (max-width: 50em){
   .primary-navigation{
     display: none;
@@ -595,6 +597,7 @@ footer div ul li a:hover{
   justify-content: space-between;
 }
 
+/* Desktop view media query */
 @media (min-width: 50em){
 
   :root{
