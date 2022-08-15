@@ -20,6 +20,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  overflow-X: hidden;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -348,7 +349,7 @@ p{
   background-image: url(/images/desktop/image-header.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -359,14 +360,14 @@ p{
   background-image: url(/images/desktop/image-transform.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 40vh;
+  min-height: 60vh;
 }
 
 .standout-img{
   background-image: url(/images/desktop/image-stand-out.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 40vh;
+  min-height: 60vh;
 }
 
 .bg-img-area{
@@ -377,7 +378,7 @@ p{
   background-image: url(/images/desktop/image-graphic-design.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 45vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -388,7 +389,7 @@ p{
   background-image: url(/images/desktop/image-photography.jpg);
   background-position: center;
   background-size: cover;
-  min-height: 45vh;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -457,6 +458,8 @@ footer{
 footer div ul li a:hover{
   color: var(--clr-neutral-100);
 }
+
+/* IntersectionObserver animations */
 
 .fade-in{
   opacity: 0;
@@ -604,6 +607,10 @@ footer div ul li a:hover{
     --size-800: 5rem;
   }
 
+  .creative{
+    min-height: 100vh;
+  }
+
   .top-container{
     padding-inline: var(--size-700);
   }
@@ -611,7 +618,6 @@ footer div ul li a:hover{
   .egg,
   .standout{
     grid-template-columns: repeat(2,1fr);
-    min-height: 50vh;
   }
 
   .egg-img{
@@ -623,11 +629,6 @@ footer div ul li a:hover{
   .bg-img-area{
     grid-template-columns: repeat(2,1fr);
   }
-
-  .graphic,
-  .photography{
-    min-height: 50vh;
-  } 
 
   .testimonials h3{
     font-size: 2.5rem;
