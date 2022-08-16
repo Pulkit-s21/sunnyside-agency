@@ -436,6 +436,10 @@ p{
   place-items: center;
 }
 
+.testimonials div blockquote{
+  place-items: center;
+}
+
 .top a{
   position: relative;
 }
@@ -668,11 +672,11 @@ footer div ul li a:hover{
   }
 
   .nav-list a{
-    color: var(--clr-neutral-100);
+    color: #fff;
   }
 
   .nav-list button{
-    color: var(--clr-neutral-100);
+    color: #fff;
   }
 
   .socials ul{
