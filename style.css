@@ -82,7 +82,8 @@ select {
 
   --clr-navBar:      hsl(200 100% 62%);
   --clr-footer:      hsl(167 44% 70%);
-  
+  --clr-navBarScrolled: rgb(75, 74, 74);
+
   --clr-primary-100: hsl(7 99% 70%);
   --clr-primary-200: hsl(51 100% 49%);  
   --clr-primary-300: hsl(167 40% 24%);
@@ -112,6 +113,18 @@ select {
   --fw-600: 600;
   --fw-700: 700;
   --fw-900: 900;
+}
+
+/* darkMode class */
+
+.darkMode{
+  --clr-neutral-100: hsl(0, 1%, 18%);
+  --clr-neutral-500: #fff;
+  --clr-neutral-300: #fff;
+  --clr-neutral-400: #fff;
+  --clr-primary-500: #fff;
+  --clr-primary-300: #fff;
+  --clr-primary-400: #fff;
 }
 
 /* Utility classes */
@@ -345,6 +358,17 @@ p{
 
 /* general styling */
 
+.dark-mode-toggle {
+  color: var(--clr-neutral-500);
+  border: 2px solid currentColor;
+  padding: 4px;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+}
+
 .creative{
   background-image: url(/images/desktop/image-header.jpg);
   background-position: center;
@@ -510,7 +534,7 @@ footer div ul li a:hover{
 }
 
 .nav-scrolled{
-  --clr-navBar: rgb(75, 74, 74);
+  background-color: var(--clr-navBarScrolled);
 }
 
 /* ------ */
@@ -644,6 +668,10 @@ footer div ul li a:hover{
   }
 
   .nav-list a{
+    color: var(--clr-neutral-100);
+  }
+
+  .nav-list button{
     color: var(--clr-neutral-100);
   }
 

@@ -26,6 +26,11 @@
             <li><a class="ff2 fs-250 text-neutral-400" href="#">Service</a></li>
             <li><a class="ff2 fs-250 text-neutral-400" href="#">Project</a></li>
             <li><a class="ff2 fs-250 text-neutral-400" href="#">Contact</a></li>
+            <li>
+              <button id="dark-mode-toggle" class="dark-mode-toggle" aria-label="toggle dark mode">
+              <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
+            </button>
+          </li>
           </ul>
         </nav>
       </div>
@@ -40,7 +45,7 @@
     </section>
 
     <!-- Transform section -->
-    <section class="dg egg top" id="egg">
+    <section class="dg egg top bg-neutral-100">
       <div class="egg-img slide-in from-right"></div>
       <div class="text padding-300 slide-in from-left">
         <h2 class="tac fs-500 ff1 padding-block-200 text-neutral-500">Transform your brand</h2>
@@ -53,7 +58,7 @@
     </section>
 
     <!-- StandOut section -->
-    <section class="dg standout top">
+    <section class="dg standout top bg-neutral-100">
       <div class="standout-img slide-in from-left"></div>
       <div class="text padding-300 slide-in from-right">
         <h2 class="tac fs-500 ff1 padding-block-200 text-neutral-500">Stand out to the right audience</h2>
@@ -84,8 +89,8 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials" id="testimonials">
-      <h3 class="tac padding-block-200 fs-250 text-neutral-300 uppercase ff1 margin-400">Client testimonials</h3>
+    <section class="testimonials bg-neutral-100" id="testimonials">
+      <h3 class="tac padding-300 fs-250 text-neutral-400 uppercase ff1">Client testimonials</h3>
 
       <div class="dg testimonial-area">
 
@@ -94,7 +99,7 @@
           <img src="/images/image-emily.jpg" alt="">
           <p class="ff2 fs-250 tac margin-300 text-neutral-300">We put our trust in Sunnyside and they delivered, making
             sure our needs were met and deadlines were always hit.</p>
-          <p class="ff2 fs-250 fw-700">Emily R.</p>
+          <p class="text-neutral-500 ff2 fs-250 fw-700">Emily R.</p>
           <p class="ff2 fs-250 text-neutral-300">Marketing Director</p>
         </div>
 
@@ -102,7 +107,7 @@
           <img src="/images/image-thomas.jpg" alt="">
           <p class="ff2 fs-250 tac margin-300 text-neutral-300">Sunnyside’s enthusiasm coupled with their keen interest
             in our brand’s success made it a satisfying and enjoyable experience.</p>
-          <p class="ff2 fs-250 fw-700">Thomas S.</p>
+          <p class="text-neutral-500 ff2 fs-250 fw-700">Thomas S.</p>
           <p class="ff2 fs-250 text-neutral-300">Chief Operating Officer</p>
         </div>
 
@@ -110,7 +115,7 @@
           <img src="/images/image-jennie.jpg" alt="">
           <p class="ff2 fs-250 tac margin-300 text-neutral-300">Incredible end result! Our sales increased over 400%
             when we worked with Sunnyside. Highly recommended!</p>
-          <p class="ff2 fs-250 fw-700">Jennie F.</p>
+          <p class="text-neutral-500 ff2 fs-250 fw-700">Jennie F.</p>
           <p class="ff2 fs-250 text-neutral-300">Business Owner</p>
         </div>
       </div>
@@ -166,6 +171,7 @@
     </footer>
   </main>
   <script type="module" src="/navToggle.js"></script>
+  <script type="module" src="/darkMode.js"></script>
 </body>
 
 </html>
