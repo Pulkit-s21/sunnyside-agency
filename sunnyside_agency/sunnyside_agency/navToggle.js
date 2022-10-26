@@ -13,7 +13,7 @@ const header = document.querySelector(".primary-header");
 const creative = document.querySelector(".creative");
 
 const creativeOptions = {
-  rootMargin: "-50px 0px 0px 0px" // -50px cz we are scrolling down..px is needed and cant we vh or vw needs to be px
+  rootMargin: "-50px 0px 0px 0px" // -50px cz we are scrolling down..px is needed and cant be vh or vw needs to be px
 };
 
 const creativeObserver = new IntersectionObserver(function(entries,creativeObserver){
@@ -48,7 +48,6 @@ const appearOnScroll = new IntersectionObserver(function(
       return;
     } else{
       entry.target.classList.add("appear");
-      console.log(entry.target);
       appearOnScroll.unobserve(entry.target);
     }
   });

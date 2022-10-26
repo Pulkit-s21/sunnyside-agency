@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+}
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:root{
+  --clr-primary-white: hsl(0, 0%, 100%);
+  --clr-primary-pale-blue: hsl(225, 100%, 94%);
+  --clr-primary-bright-blue: hsl(245, 75%, 52%);
+
+  --clr-neutral-pale-blue: hsl(225, 100%, 98%);
+  --clr-neutral-desat-blue: hsl(224, 23%, 55%);
+  --clr-neutral-dark-blue: hsl(223, 47%, 23%);
+
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+
+  --space-1: .5em 0;
+  --space-2: 0 1em;
+
+  --radius-1: .5rem;
+  --radius-2: 1rem;
+
+  --box-shadow:
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+/* components */
+
+.flow > * + *{
+  margin-top: 1em;
+}
+
+/* utility */
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fw-500{
+  font-weight: var(--fw-500);
+}
+
+.fw-700{
+  font-weight: var(--fw-700);
+}
+
+.fw-900{
+  font-weight: var(--fw-900);
+}
+
+.text-neutral-400{
+  color: var(--clr-neutral-pale-blue);
+}
+
+.text-neutral-700{
+  color: var(--clr-neutral-desat-blue);
+}
+
+.text-neutral-900{
+  color: var(--clr-neutral-dark-blue);
+}
+
+.text-primary-400{
+  color: var(--clr-primary-pale-blue);
+}
+
+.text-primary-700{
+  color: var(--clr-primary-bright-blue);
+}
+
+.bg-primary-white{
+  background-color: var(--clr-primary-white);
+}
+
+.bg-neutral-400{
+  background-color: var(--clr-neutral-pale-blue);
+}
+
+.bg-transparent{
+  background: transparent;
+}
+
+.overflow{
+  overflow: hidden;
+}
+
+.padding-12{
+  padding: .75rem;
+}
+
+.padding-24{
+  padding: 1.5rem;
+}
+
+.padding-48{
+  padding: 3rem;
+}
+
+.margin-vert{
+  margin: var(--space-1);
+}
+
+.margin-hori{
+  margin: var(--space-2);
+}
+
+.radius-1{
+  border-radius: var(--radius-1);
+}
+
+.radius-2{
+  border-radius: var(--radius-2);
+}
+
+.text-align-center{
+  text-align: center;
+}
+
+.text-align-left{
+  text-align: left;
+}
+
+.text-align-right{
+  text-align: right;
+}
+
+.box-shadow{
+  box-shadow: var(--box-shadow);
+}
+
+/* main */
+
+body{
+  background-color: var(--clr-primary-pale-blue);
+}
+
+.card{
+  max-width: 24em; 
+}
+
+.btn1{
+  background-color: var(--clr-primary-bright-blue);
+  color: #fff;
+  width: 100%;
+}

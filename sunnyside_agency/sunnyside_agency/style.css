@@ -91,6 +91,7 @@ select {
   --clr-primary-500: hsl(168 34% 41%);
 
   --clr-neutral-100: hsl(0 0% 100%);
+  --clr-white: #fff;
   --clr-neutral-200: hsl(210 4% 67%);
   --clr-neutral-300: hsl(232 10% 55%);
   --clr-neutral-400: hsl(213 9% 39%);
@@ -164,6 +165,10 @@ select {
 
 .text-neutral-100{
   color: var(--clr-neutral-100);
+}
+
+.text-neutral-white{
+  color: var(--clr-white);
 }
 
 .text-neutral-200{
